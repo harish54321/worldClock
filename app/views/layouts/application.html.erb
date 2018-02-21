@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WorldClock</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= @google_api_key %>&libraries=places"></script>
+  </head>
+
+  <body>
+    <!-- <%= semantic_flash %> -->
+    <%= yield %>
+  </body>
+</html>
